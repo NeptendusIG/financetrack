@@ -1,6 +1,5 @@
 # Editable Git install (financetrack==1.0.0) with either a deleted local remote or invalid URI:
 # 'https:/github.com/NeptendusIG/WeeVocabulary.git'
--e /Users/gaetan/wksp_python/_ongoing/financetrack-project
 matplotlib==3.9.2
 pandas==2.2.2
 tk==0.1.0
