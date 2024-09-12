@@ -24,10 +24,9 @@ if __name__ == '__main__':
 import pandas as pd
 import tkinter as tk
 # Imports spécifiques
-from typing import Any, Optional
 # Imports locaux
-from utility_dir.utility import File, Settings, GUI
-from class_dir.gui_app import FindStoreApp, FindAccountApp
+from utility import File, Settings, GUI
+from financetrack.class_dir.gui_app import FindStoreApp, FindAccountApp
 
 
 # Paramètres

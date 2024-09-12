@@ -8,10 +8,7 @@
 
 """
 # IMPORTS
-import sys, os
-if __name__ == '__main__':
-    sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from utility_dir.utility import GUI, File, Settings
+from utility import GUI, File, Settings
 import tkinter as tk
 from tkinter import messagebox
 import ttkbootstrap as ttk

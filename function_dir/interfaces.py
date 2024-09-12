@@ -17,9 +17,6 @@ Réalisation des graphiques
 
 # -- IMPORTS --
 # Modules basiques
-import os, logging, sys
-if __name__ == '__main__':
-    sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # Modules renommés
 import tkinter as tk
 import ttkbootstrap as ttk
@@ -32,8 +29,8 @@ import numpy as np
 from datetime import date
 from datetime import datetime
 # Imports locaux
-from utility_dir.utility import File, Settings, GUI
-from class_dir.gui_app import DateRangeApp
+from utility import File, Settings, GUI
+from financetrack.class_dir.gui_app import DateRangeApp
 
 
 # Paramètres

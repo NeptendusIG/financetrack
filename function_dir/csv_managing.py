@@ -24,12 +24,12 @@ import pandas as pd
 # Imports spécifiques
 from typing import Any, Optional
 # Imports locaux
-from utility_dir.utility import File, Settings, GUI
+from utility import File, Settings, GUI
 
 
 # Paramètres
 logger = Settings.setup_logging("debugging")
-
+FULLLIST_PATH = "data/output/finance_full_list.csv"
 
 # -- FONCTIONS DÉFINIES --
 # 1 - Récupération des données CSV
@@ -105,7 +105,7 @@ def remake_csvfile_with_dataframe(csv_path, df):
     """Les row du DataFrame df sont toutes à ajoutée au CSV. Le première rangée doit arriver en première ligne du CSV"""
     # 1 - ecq les colones correspondent
     # 2 - Lire le contenu actuel du fichier CSV
-    old_df = import_csv_pandas("data/output/full_list.csv")
+    old_df = import_csv_pandas(FULLLIST_PATH)
     logger.info(f"UpdateCSVArchive: old LOADED (headers: {old_df.add_prefix()} size: {len(old_df)})")
     # 3 - Convertir le DataFrame en liste de listes
     new_data = df.values.tolist()
